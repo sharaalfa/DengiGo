@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="base.definition" template="/WEB-INF/views/layout/layout.jsp">
+        <put-attribute name="title" value="СОКОЛ"/>
+        <put-attribute name="header" value="/WEB-INF/views/layout/header.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp"/>
+    </definition>
+
+    <definition name="index" extends="base.definition">
+        <put-attribute name="title" value="СОКОЛ | Главная"/>
+        <put-attribute name="header" value="/WEB-INF/views/layout/header.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/views/main.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp"/>
+    </definition>
+
+    <definition name="login" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/login.jsp"/>
+    </definition>
+
+    <definition name="createtable" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/createtable.jsp"/>
+    </definition>
+
+    <definition name="register" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/register.jsp"/>
+    </definition>
+    <definition name="admin" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/admin.jsp"/>
+    </definition>
+
+    <definition name="test" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/test.jsp"/>
+    </definition>
+
+    <definition name="first" extends="base.definition">
+        <put-attribute name="title" value="First Page"/>
+        <put-attribute name="body" value="/WEB-INF/views/first.jsp"/>
+    </definition>
+
+    <definition name="password" extends="base.definition">
+        <put-attribute name="title" value="Your encoded password"/>
+        <put-attribute name="body" value="/WEB-INF/views/password.jsp"/>
+    </definition>
+
+    <definition name="second" extends="base.definition">
+        <put-attribute name="title" value="Second Page"/>
+        <put-attribute name="body" value="/WEB-INF/views/second.jsp"/>
+    </definition>
+
+</tiles-definitions>
